@@ -1,0 +1,216 @@
+[*] config: Config { vendor_id: 4661, product_id: 10, in_endpoint: 1, out_endpoint: 2, interface: Midi(MidiInterface { client_name: "autocrap", out_port: Virtual("autocrap"), in_port: Virtual("autocrap") }), mappings: [Range { count: 8, mapping: Mapping { name: "knob{i}", ctrl_in_sequence: None, ctrl_in_num: Some(64), ctrl_out_num: Some(64), ctrl_kind: Relative { mode: Accumulate }, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 64 }) } }, Range { count: 8, mapping: Mapping { name: "knob{i}Touch", ctrl_in_sequence: None, ctrl_in_num: Some(95), ctrl_out_num: None, ctrl_kind: OnOff { mode: Momentary }, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 95 }) } }, Range { count: 16, mapping: Mapping { name: "button{i}", ctrl_in_sequence: None, ctrl_in_num: Some(112), ctrl_out_num: Some(112), ctrl_kind: OnOff { mode: Toggle }, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 112 }) } }, Single(Mapping { name: "xfader", ctrl_in_sequence: Some([72, 73]), ctrl_in_num: None, ctrl_out_num: None, ctrl_kind: EightBit, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 72 }) }), Single(Mapping { name: "xfaderTouch", ctrl_in_sequence: None, ctrl_in_num: Some(83), ctrl_out_num: None, ctrl_kind: OnOff { mode: Momentary }, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 83 }) }), Single(Mapping { name: "speedDial", ctrl_in_sequence: None, ctrl_in_num: Some(74), ctrl_out_num: Some(80), ctrl_kind: Relative { mode: Accumulate }, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 74 }) }), Single(Mapping { name: "speedDialTouch", ctrl_in_sequence: None, ctrl_in_num: Some(82), ctrl_out_num: None, ctrl_kind: OnOff { mode: Momentary }, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 82 }) }), Single(Mapping { name: "speedDialButton", ctrl_in_sequence: None, ctrl_in_num: Some(81), ctrl_out_num: None, ctrl_kind: OnOff { mode: Momentary }, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 81 }) })] }
+[*] active configuration: 1
+[*] languages: [Language { raw: 1033 }]
+[*] manufacturer: Some("Novation DMS Ltd")
+[*] product: Some("Nocturn")
+[*] serial number: None
+[*] control in endpoint: Endpoint { config: 1, iface: 0, setting: 0, address: 129, transfer_type: Interrupt, direction: In }
+[*] control out endpoint: Endpoint { config: 2, iface: 0, setting: 0, address: 2, transfer_type: Interrupt, direction: Out }
+[*] configure_endpoint Endpoint { config: 1, iface: 0, setting: 0, address: 129, transfer_type: Interrupt, direction: In }
+[*] configure_endpoint Endpoint { config: 2, iface: 0, setting: 0, address: 2, transfer_type: Interrupt, direction: Out }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(64), ctrl_out_num: Some(64), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 64 }), osc_addr: "/knob0", state: 0 }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(65), ctrl_out_num: Some(65), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 65 }), osc_addr: "/knob1", state: 0 }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(66), ctrl_out_num: Some(66), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 66 }), osc_addr: "/knob2", state: 0 }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(67), ctrl_out_num: Some(67), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 67 }), osc_addr: "/knob3", state: 0 }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(68), ctrl_out_num: Some(68), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 68 }), osc_addr: "/knob4", state: 0 }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(69), ctrl_out_num: Some(69), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 69 }), osc_addr: "/knob5", state: 0 }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(70), ctrl_out_num: Some(70), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 70 }), osc_addr: "/knob6", state: 0 }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(71), ctrl_out_num: Some(71), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 71 }), osc_addr: "/knob7", state: 0 }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(95), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 95 }), osc_addr: "/knob0Touch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(96), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 96 }), osc_addr: "/knob1Touch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(97), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 97 }), osc_addr: "/knob2Touch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(98), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 98 }), osc_addr: "/knob3Touch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(99), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 99 }), osc_addr: "/knob4Touch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(100), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 100 }), osc_addr: "/knob5Touch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(101), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 101 }), osc_addr: "/knob6Touch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(102), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 102 }), osc_addr: "/knob7Touch", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(112), ctrl_out_num: Some(112), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 112 }), osc_addr: "/button0", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(113), ctrl_out_num: Some(113), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 113 }), osc_addr: "/button1", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(114), ctrl_out_num: Some(114), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 114 }), osc_addr: "/button2", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(115), ctrl_out_num: Some(115), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 115 }), osc_addr: "/button3", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(116), ctrl_out_num: Some(116), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 116 }), osc_addr: "/button4", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(117), ctrl_out_num: Some(117), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 117 }), osc_addr: "/button5", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(118), ctrl_out_num: Some(118), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 118 }), osc_addr: "/button6", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(119), ctrl_out_num: Some(119), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 119 }), osc_addr: "/button7", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(120), ctrl_out_num: Some(120), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 120 }), osc_addr: "/button8", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(121), ctrl_out_num: Some(121), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 121 }), osc_addr: "/button9", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(122), ctrl_out_num: Some(122), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 122 }), osc_addr: "/button10", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(123), ctrl_out_num: Some(123), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 123 }), osc_addr: "/button11", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(124), ctrl_out_num: Some(124), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 124 }), osc_addr: "/button12", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(125), ctrl_out_num: Some(125), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 125 }), osc_addr: "/button13", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(126), ctrl_out_num: Some(126), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 126 }), osc_addr: "/button14", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(127), ctrl_out_num: Some(127), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 127 }), osc_addr: "/button15", state: false }
+[*] adding EightBitLogic { ctrl_in_hi_num: 72, ctrl_in_lo_num: 73, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 72 }), osc_addr: "/xfader", state: [0, 0] }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(83), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 83 }), osc_addr: "/xfaderTouch", state: false }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(74), ctrl_out_num: Some(80), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 74 }), osc_addr: "/speedDial", state: 0 }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(82), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 82 }), osc_addr: "/speedDialTouch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(81), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 81 }), osc_addr: "/speedDialButton", state: false }
+thread 'main' panicked at src/main.rs:157:95thread '<unnamed>:
+called `Result::unwrap()` on an `Err` value: InitError' panicked at src/main.rs
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+:416:47:
+called `Result::unwrap()` on an `Err` value: InitError
+thread '<unnamed>' panicked at src/main.rs:145:70:
+called `Result::unwrap()` on an `Err` value: RecvError
+[*] config: Config { vendor_id: 4661, product_id: 10, in_endpoint: 1, out_endpoint: 2, interface: Midi(MidiInterface { client_name: "autocrap", out_port: Virtual("autocrap"), in_port: Virtual("autocrap") }), mappings: [Range { count: 8, mapping: Mapping { name: "knob{i}", ctrl_in_sequence: None, ctrl_in_num: Some(64), ctrl_out_num: Some(64), ctrl_kind: Relative { mode: Accumulate }, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 64 }) } }, Range { count: 8, mapping: Mapping { name: "knob{i}Touch", ctrl_in_sequence: None, ctrl_in_num: Some(95), ctrl_out_num: None, ctrl_kind: OnOff { mode: Momentary }, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 95 }) } }, Range { count: 16, mapping: Mapping { name: "button{i}", ctrl_in_sequence: None, ctrl_in_num: Some(112), ctrl_out_num: Some(112), ctrl_kind: OnOff { mode: Toggle }, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 112 }) } }, Single(Mapping { name: "xfader", ctrl_in_sequence: Some([72, 73]), ctrl_in_num: None, ctrl_out_num: None, ctrl_kind: EightBit, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 72 }) }), Single(Mapping { name: "xfaderTouch", ctrl_in_sequence: None, ctrl_in_num: Some(83), ctrl_out_num: None, ctrl_kind: OnOff { mode: Momentary }, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 83 }) }), Single(Mapping { name: "speedDial", ctrl_in_sequence: None, ctrl_in_num: Some(74), ctrl_out_num: Some(80), ctrl_kind: Relative { mode: Accumulate }, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 74 }) }), Single(Mapping { name: "speedDialTouch", ctrl_in_sequence: None, ctrl_in_num: Some(82), ctrl_out_num: None, ctrl_kind: OnOff { mode: Momentary }, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 82 }) }), Single(Mapping { name: "speedDialButton", ctrl_in_sequence: None, ctrl_in_num: Some(81), ctrl_out_num: None, ctrl_kind: OnOff { mode: Momentary }, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 81 }) })] }
+[*] active configuration: 1
+[*] languages: [Language { raw: 1033 }]
+[*] manufacturer: Some("Novation DMS Ltd")
+[*] product: Some("Nocturn")
+[*] serial number: None
+[*] control in endpoint: Endpoint { config: 1, iface: 0, setting: 0, address: 129, transfer_type: Interrupt, direction: In }
+[*] control out endpoint: Endpoint { config: 2, iface: 0, setting: 0, address: 2, transfer_type: Interrupt, direction: Out }
+[*] configure_endpoint Endpoint { config: 1, iface: 0, setting: 0, address: 129, transfer_type: Interrupt, direction: In }
+[*] configure_endpoint Endpoint { config: 2, iface: 0, setting: 0, address: 2, transfer_type: Interrupt, direction: Out }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(64), ctrl_out_num: Some(64), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 64 }), osc_addr: "/knob0", state: 0 }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(65), ctrl_out_num: Some(65), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 65 }), osc_addr: "/knob1", state: 0 }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(66), ctrl_out_num: Some(66), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 66 }), osc_addr: "/knob2", state: 0 }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(67), ctrl_out_num: Some(67), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 67 }), osc_addr: "/knob3", state: 0 }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(68), ctrl_out_num: Some(68), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 68 }), osc_addr: "/knob4", state: 0 }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(69), ctrl_out_num: Some(69), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 69 }), osc_addr: "/knob5", state: 0 }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(70), ctrl_out_num: Some(70), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 70 }), osc_addr: "/knob6", state: 0 }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(71), ctrl_out_num: Some(71), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 71 }), osc_addr: "/knob7", state: 0 }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(95), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 95 }), osc_addr: "/knob0Touch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(96), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 96 }), osc_addr: "/knob1Touch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(97), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 97 }), osc_addr: "/knob2Touch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(98), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 98 }), osc_addr: "/knob3Touch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(99), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 99 }), osc_addr: "/knob4Touch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(100), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 100 }), osc_addr: "/knob5Touch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(101), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 101 }), osc_addr: "/knob6Touch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(102), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 102 }), osc_addr: "/knob7Touch", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(112), ctrl_out_num: Some(112), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 112 }), osc_addr: "/button0", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(113), ctrl_out_num: Some(113), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 113 }), osc_addr: "/button1", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(114), ctrl_out_num: Some(114), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 114 }), osc_addr: "/button2", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(115), ctrl_out_num: Some(115), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 115 }), osc_addr: "/button3", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(116), ctrl_out_num: Some(116), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 116 }), osc_addr: "/button4", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(117), ctrl_out_num: Some(117), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 117 }), osc_addr: "/button5", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(118), ctrl_out_num: Some(118), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 118 }), osc_addr: "/button6", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(119), ctrl_out_num: Some(119), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 119 }), osc_addr: "/button7", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(120), ctrl_out_num: Some(120), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 120 }), osc_addr: "/button8", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(121), ctrl_out_num: Some(121), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 121 }), osc_addr: "/button9", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(122), ctrl_out_num: Some(122), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 122 }), osc_addr: "/button10", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(123), ctrl_out_num: Some(123), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 123 }), osc_addr: "/button11", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(124), ctrl_out_num: Some(124), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 124 }), osc_addr: "/button12", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(125), ctrl_out_num: Some(125), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 125 }), osc_addr: "/button13", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(126), ctrl_out_num: Some(126), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 126 }), osc_addr: "/button14", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(127), ctrl_out_num: Some(127), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 127 }), osc_addr: "/button15", state: false }
+[*] adding EightBitLogic { ctrl_in_hi_num: 72, ctrl_in_lo_num: 73, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 72 }), osc_addr: "/xfader", state: [0, 0] }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(83), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 83 }), osc_addr: "/xfaderTouch", state: false }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(74), ctrl_out_num: Some(80), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 74 }), osc_addr: "/speedDial", state: 0 }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(82), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 82 }), osc_addr: "/speedDialTouch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(81), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 81 }), osc_addr: "/speedDialButton", state: false }
+thread 'main' panicked at src/main.rsthread '<unnamed>' panicked at src/main.rs:416::157:95:
+called `Result::unwrap()` on an `Err` value: InitError
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+47:
+called `Result::unwrap()` on an `Err` value: InitError
+thread '<unnamed>' panicked at src/main.rs:145:70:
+called `Result::unwrap()` on an `Err` value: RecvError
+[*] config: Config { vendor_id: 4661, product_id: 10, in_endpoint: 1, out_endpoint: 2, interface: Midi(MidiInterface { client_name: "autocrap", out_port: Virtual("autocrap"), in_port: Virtual("autocrap") }), mappings: [Range { count: 8, mapping: Mapping { name: "knob{i}", ctrl_in_sequence: None, ctrl_in_num: Some(64), ctrl_out_num: Some(64), ctrl_kind: Relative { mode: Accumulate }, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 64 }) } }, Range { count: 8, mapping: Mapping { name: "knob{i}Touch", ctrl_in_sequence: None, ctrl_in_num: Some(95), ctrl_out_num: None, ctrl_kind: OnOff { mode: Momentary }, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 95 }) } }, Range { count: 16, mapping: Mapping { name: "button{i}", ctrl_in_sequence: None, ctrl_in_num: Some(112), ctrl_out_num: Some(112), ctrl_kind: OnOff { mode: Toggle }, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 112 }) } }, Single(Mapping { name: "xfader", ctrl_in_sequence: Some([72, 73]), ctrl_in_num: None, ctrl_out_num: None, ctrl_kind: EightBit, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 72 }) }), Single(Mapping { name: "xfaderTouch", ctrl_in_sequence: None, ctrl_in_num: Some(83), ctrl_out_num: None, ctrl_kind: OnOff { mode: Momentary }, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 83 }) }), Single(Mapping { name: "speedDial", ctrl_in_sequence: None, ctrl_in_num: Some(74), ctrl_out_num: Some(80), ctrl_kind: Relative { mode: Accumulate }, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 74 }) }), Single(Mapping { name: "speedDialTouch", ctrl_in_sequence: None, ctrl_in_num: Some(82), ctrl_out_num: None, ctrl_kind: OnOff { mode: Momentary }, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 82 }) }), Single(Mapping { name: "speedDialButton", ctrl_in_sequence: None, ctrl_in_num: Some(81), ctrl_out_num: None, ctrl_kind: OnOff { mode: Momentary }, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 81 }) })] }
+[*] active configuration: 1
+[*] languages: [Language { raw: 1033 }]
+[*] manufacturer: Some("Novation DMS Ltd")
+[*] product: Some("Nocturn")
+[*] serial number: None
+[*] control in endpoint: Endpoint { config: 1, iface: 0, setting: 0, address: 129, transfer_type: Interrupt, direction: In }
+[*] control out endpoint: Endpoint { config: 2, iface: 0, setting: 0, address: 2, transfer_type: Interrupt, direction: Out }
+[*] configure_endpoint Endpoint { config: 1, iface: 0, setting: 0, address: 129, transfer_type: Interrupt, direction: In }
+[*] configure_endpoint Endpoint { config: 2, iface: 0, setting: 0, address: 2, transfer_type: Interrupt, direction: Out }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(64), ctrl_out_num: Some(64), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 64 }), osc_addr: "/knob0", state: 0 }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(65), ctrl_out_num: Some(65), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 65 }), osc_addr: "/knob1", state: 0 }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(66), ctrl_out_num: Some(66), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 66 }), osc_addr: "/knob2", state: 0 }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(67), ctrl_out_num: Some(67), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 67 }), osc_addr: "/knob3", state: 0 }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(68), ctrl_out_num: Some(68), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 68 }), osc_addr: "/knob4", state: 0 }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(69), ctrl_out_num: Some(69), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 69 }), osc_addr: "/knob5", state: 0 }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(70), ctrl_out_num: Some(70), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 70 }), osc_addr: "/knob6", state: 0 }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(71), ctrl_out_num: Some(71), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 71 }), osc_addr: "/knob7", state: 0 }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(95), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 95 }), osc_addr: "/knob0Touch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(96), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 96 }), osc_addr: "/knob1Touch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(97), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 97 }), osc_addr: "/knob2Touch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(98), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 98 }), osc_addr: "/knob3Touch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(99), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 99 }), osc_addr: "/knob4Touch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(100), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 100 }), osc_addr: "/knob5Touch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(101), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 101 }), osc_addr: "/knob6Touch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(102), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 102 }), osc_addr: "/knob7Touch", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(112), ctrl_out_num: Some(112), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 112 }), osc_addr: "/button0", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(113), ctrl_out_num: Some(113), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 113 }), osc_addr: "/button1", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(114), ctrl_out_num: Some(114), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 114 }), osc_addr: "/button2", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(115), ctrl_out_num: Some(115), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 115 }), osc_addr: "/button3", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(116), ctrl_out_num: Some(116), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 116 }), osc_addr: "/button4", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(117), ctrl_out_num: Some(117), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 117 }), osc_addr: "/button5", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(118), ctrl_out_num: Some(118), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 118 }), osc_addr: "/button6", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(119), ctrl_out_num: Some(119), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 119 }), osc_addr: "/button7", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(120), ctrl_out_num: Some(120), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 120 }), osc_addr: "/button8", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(121), ctrl_out_num: Some(121), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 121 }), osc_addr: "/button9", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(122), ctrl_out_num: Some(122), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 122 }), osc_addr: "/button10", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(123), ctrl_out_num: Some(123), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 123 }), osc_addr: "/button11", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(124), ctrl_out_num: Some(124), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 124 }), osc_addr: "/button12", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(125), ctrl_out_num: Some(125), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 125 }), osc_addr: "/button13", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(126), ctrl_out_num: Some(126), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 126 }), osc_addr: "/button14", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(127), ctrl_out_num: Some(127), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 127 }), osc_addr: "/button15", state: false }
+[*] adding EightBitLogic { ctrl_in_hi_num: 72, ctrl_in_lo_num: 73, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 72 }), osc_addr: "/xfader", state: [0, 0] }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(83), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 83 }), osc_addr: "/xfaderTouch", state: false }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(74), ctrl_out_num: Some(80), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 74 }), osc_addr: "/speedDial", state: 0 }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(82), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 82 }), osc_addr: "/speedDialTouch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(81), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 81 }), osc_addr: "/speedDialButton", state: false }
+thread 'main' panicked at src/main.rs:157:95thread '<unnamed>' panicked at src/main.rs:416:47:
+called `Result::unwrap()` on an `Err` value: InitError
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+:
+called `Result::unwrap()` on an `Err` value: InitError
+thread '<unnamed>' panicked at src/main.rs:145:70:
+called `Result::unwrap()` on an `Err` value: RecvError
+[*] config: Config { vendor_id: 4661, product_id: 10, in_endpoint: 1, out_endpoint: 2, interface: Midi(MidiInterface { client_name: "autocrap", out_port: Virtual("autocrap"), in_port: Virtual("autocrap") }), mappings: [Range { count: 8, mapping: Mapping { name: "knob{i}", ctrl_in_sequence: None, ctrl_in_num: Some(64), ctrl_out_num: Some(64), ctrl_kind: Relative { mode: Accumulate }, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 64 }) } }, Range { count: 8, mapping: Mapping { name: "knob{i}Touch", ctrl_in_sequence: None, ctrl_in_num: Some(95), ctrl_out_num: None, ctrl_kind: OnOff { mode: Momentary }, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 95 }) } }, Range { count: 16, mapping: Mapping { name: "button{i}", ctrl_in_sequence: None, ctrl_in_num: Some(112), ctrl_out_num: Some(112), ctrl_kind: OnOff { mode: Toggle }, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 112 }) } }, Single(Mapping { name: "xfader", ctrl_in_sequence: Some([72, 73]), ctrl_in_num: None, ctrl_out_num: None, ctrl_kind: EightBit, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 72 }) }), Single(Mapping { name: "xfaderTouch", ctrl_in_sequence: None, ctrl_in_num: Some(83), ctrl_out_num: None, ctrl_kind: OnOff { mode: Momentary }, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 83 }) }), Single(Mapping { name: "speedDial", ctrl_in_sequence: None, ctrl_in_num: Some(74), ctrl_out_num: Some(80), ctrl_kind: Relative { mode: Accumulate }, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 74 }) }), Single(Mapping { name: "speedDialTouch", ctrl_in_sequence: None, ctrl_in_num: Some(82), ctrl_out_num: None, ctrl_kind: OnOff { mode: Momentary }, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 82 }) }), Single(Mapping { name: "speedDialButton", ctrl_in_sequence: None, ctrl_in_num: Some(81), ctrl_out_num: None, ctrl_kind: OnOff { mode: Momentary }, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 81 }) })] }
+[*] active configuration: 1
+[*] languages: [Language { raw: 1033 }]
+[*] manufacturer: Some("Novation DMS Ltd")
+[*] product: Some("Nocturn")
+[*] serial number: None
+[*] control in endpoint: Endpoint { config: 1, iface: 0, setting: 0, address: 129, transfer_type: Interrupt, direction: In }
+[*] control out endpoint: Endpoint { config: 2, iface: 0, setting: 0, address: 2, transfer_type: Interrupt, direction: Out }
+[*] configure_endpoint Endpoint { config: 1, iface: 0, setting: 0, address: 129, transfer_type: Interrupt, direction: In }
+[*] configure_endpoint Endpoint { config: 2, iface: 0, setting: 0, address: 2, transfer_type: Interrupt, direction: Out }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(64), ctrl_out_num: Some(64), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 64 }), osc_addr: "/knob0", state: 0 }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(65), ctrl_out_num: Some(65), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 65 }), osc_addr: "/knob1", state: 0 }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(66), ctrl_out_num: Some(66), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 66 }), osc_addr: "/knob2", state: 0 }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(67), ctrl_out_num: Some(67), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 67 }), osc_addr: "/knob3", state: 0 }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(68), ctrl_out_num: Some(68), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 68 }), osc_addr: "/knob4", state: 0 }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(69), ctrl_out_num: Some(69), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 69 }), osc_addr: "/knob5", state: 0 }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(70), ctrl_out_num: Some(70), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 70 }), osc_addr: "/knob6", state: 0 }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(71), ctrl_out_num: Some(71), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 71 }), osc_addr: "/knob7", state: 0 }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(95), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 95 }), osc_addr: "/knob0Touch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(96), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 96 }), osc_addr: "/knob1Touch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(97), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 97 }), osc_addr: "/knob2Touch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(98), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 98 }), osc_addr: "/knob3Touch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(99), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 99 }), osc_addr: "/knob4Touch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(100), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 100 }), osc_addr: "/knob5Touch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(101), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 101 }), osc_addr: "/knob6Touch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(102), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 102 }), osc_addr: "/knob7Touch", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(112), ctrl_out_num: Some(112), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 112 }), osc_addr: "/button0", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(113), ctrl_out_num: Some(113), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 113 }), osc_addr: "/button1", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(114), ctrl_out_num: Some(114), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 114 }), osc_addr: "/button2", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(115), ctrl_out_num: Some(115), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 115 }), osc_addr: "/button3", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(116), ctrl_out_num: Some(116), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 116 }), osc_addr: "/button4", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(117), ctrl_out_num: Some(117), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 117 }), osc_addr: "/button5", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(118), ctrl_out_num: Some(118), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 118 }), osc_addr: "/button6", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(119), ctrl_out_num: Some(119), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 119 }), osc_addr: "/button7", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(120), ctrl_out_num: Some(120), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 120 }), osc_addr: "/button8", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(121), ctrl_out_num: Some(121), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 121 }), osc_addr: "/button9", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(122), ctrl_out_num: Some(122), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 122 }), osc_addr: "/button10", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(123), ctrl_out_num: Some(123), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 123 }), osc_addr: "/button11", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(124), ctrl_out_num: Some(124), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 124 }), osc_addr: "/button12", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(125), ctrl_out_num: Some(125), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 125 }), osc_addr: "/button13", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(126), ctrl_out_num: Some(126), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 126 }), osc_addr: "/button14", state: false }
+[*] adding OnOffLogic { mode: Toggle, ctrl_in_num: Some(127), ctrl_out_num: Some(127), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 127 }), osc_addr: "/button15", state: false }
+[*] adding EightBitLogic { ctrl_in_hi_num: 72, ctrl_in_lo_num: 73, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 72 }), osc_addr: "/xfader", state: [0, 0] }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(83), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 83 }), osc_addr: "/xfaderTouch", state: false }
+[*] adding RelativeLogic { mode: Accumulate, ctrl_in_num: Some(74), ctrl_out_num: Some(80), midi: Some(MidiSpec { channel: 13, kind: Cc, num: 74 }), osc_addr: "/speedDial", state: 0 }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(82), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 82 }), osc_addr: "/speedDialTouch", state: false }
+[*] adding OnOffLogic { mode: Momentary, ctrl_in_num: Some(81), ctrl_out_num: None, midi: Some(MidiSpec { channel: 13, kind: Cc, num: 81 }), osc_addr: "/speedDialButton", state: false }
+thread 'main' panicked at src/main.rs:157:95:
+called `Result::unwrap()` on an `Err` value: InitError
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+thread '<unnamed>' panicked at src/main.rs:416:47:
+called `Result::unwrap()` on an `Err` value: InitError
+thread '<unnamed>' panicked at src/main.rs:145:70:
+called `Result::unwrap()` on an `Err` value: RecvError
