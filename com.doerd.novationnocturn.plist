@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UserName</key>
+	<string>m.matzat</string>
+	<key>StandardOutPath</key>
+	<string>/Users/m.matzat/.bin/logs/novationNocturn.log</string>
+	<key>StandardErrorPath</key>
+	<string>/Users/m.matzat/.bin/logs/novationNocturn-error.log</string>
+	<key>Label</key>
+	<string>com.doerd.novationnocturn</string>
+	<key>Program</key>
+	<string>/Users/m.matzat/.bin/novationNocturn</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Users/m.matzat/.bin/novationNocturn</string>
+	</array>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.iokit.matching</key>
+		<dict>
+			<key>com.apple.device-attach</key>
+			<dict>
+				<key>idVendor</key>
+				<integer>4661</integer>
+				<key>idProduct</key>
+				<integer>10</integer>
+				<key>IOProviderClass</key>
+				<string>IOUSBDevice</string>
+				<key>IOMatchLaunchStream</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

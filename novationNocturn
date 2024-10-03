@@ -1,0 +1,57 @@
+#!/bin/bash
+#
+d=$( date '+%Y-%m-%d_%H%M%S' )
+binDir="/Users/m.matzat/.bin"
+binApp="novationNocturn"
+bin="$binDir/$binApp"
+logDir="$binDir/logs"
+logFileName="novationNocturn.log"
+logFile="$logDir/$logFileName"
+logFileEname="novationNocturn-error.log"
+logFileE="$logDir/$logFileEname"
+logFileDname="novationNocturn-$d.log"
+logFileD="$logDir/$logFileDname"
+logFileCount=$( ls -1q /Users/m.matzat/.bin/logs/novationNocturn-20* | wc -l )
+
+function logger () {
+	logMSG=$1
+	curDate=$( date '+%Y-%m-%d_%H:%M:%S' )
+	echo "" >> $logFile
+	echo "$curDate   $logMSG" >> $logFile
+}
+
+function logfiles () {
+	if [[ -z $1 ]]
+	then
+		touch $logFileD
+		logger "created datelog file"
+	else
+		touch $logFile
+		touch $logFileE
+		logger "created log file ($logFileName)"
+		logger "created errorlog file ($logFileEname)"
+	fi
+}
+
+if [[ $logFileCount -ge 10 ]]
+then
+#	echo "found $logFileCount datelog files - deleting..." >> $logFile
+	logger "found $logFileCount datelog files > deleting"
+	rm /Users/m.matzat/.bin/logs/novationNocturn-20*.log
+	logger "deleted $logFileCount datelog files"
+	rm $logFileE
+	touch $logFileE
+	logger "reset errorlog file"
+fi
+
+if [[ -z $1 ]]
+then
+	logfiles
+else
+	rm /Users/m.matzat/.bin/logs/*.log
+	logger "deleted all log files"
+	logfiles "all"
+fi
+
+#/Users/m.matzat/.bin/autocrap/autocrap -c /Users/m.matzat/.bin/autocrap/config/nocturn-midi.json & 
+/Users/m.matzat/.bin/autocrap/autocrap -c /Users/m.matzat/.bin/autocrap/config/nocturn-midi.json

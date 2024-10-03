@@ -1,0 +1,6 @@
+#!/bin/bash
+d=$( date '+%Y-%m-%d_%H:%M:%S' )
+#d=$( date '+%F_%H%M%S' )
+f="novationNocturn-$d.log"
+touch /Users/m.matzat/$f
+exit 0
