@@ -3,5 +3,5 @@ python script for reuse novation nocturn controller when plugged into usb port o
 
 ## INFORMATION
 forked from https://github.com/ahihi/autocrap.
-thanks to [https://github.com/ahihi](ahihi) for the autocrap driver 
+thanks to [ahihi](https://github.com/ahihi) for the autocrap driver 
  
