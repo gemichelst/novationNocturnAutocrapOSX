@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>UserName</key>
-	<string>m.matzat</string>
+	<string>yourUsername</string>
 	<key>StandardOutPath</key>
 	<string>/path/to/logs/novationNocturn.log</string>
 	<key>StandardErrorPath</key>
