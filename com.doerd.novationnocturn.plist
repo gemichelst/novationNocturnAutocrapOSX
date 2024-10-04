@@ -5,16 +5,16 @@
 	<key>UserName</key>
 	<string>m.matzat</string>
 	<key>StandardOutPath</key>
-	<string>/Users/m.matzat/.bin/logs/novationNocturn.log</string>
+	<string>/path/to/logs/novationNocturn.log</string>
 	<key>StandardErrorPath</key>
-	<string>/Users/m.matzat/.bin/logs/novationNocturn-error.log</string>
+	<string>/path/to/logs/novationNocturn-error.log</string>
 	<key>Label</key>
 	<string>com.doerd.novationnocturn</string>
 	<key>Program</key>
-	<string>/Users/m.matzat/.bin/novationNocturn</string>
+	<string>/path/to/bin/novationNocturn</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/Users/m.matzat/.bin/novationNocturn</string>
+		<string>/path/to/bin/novationNocturn</string>
 	</array>
 	<key>LaunchEvents</key>
 	<dict>
